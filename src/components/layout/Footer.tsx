@@ -44,7 +44,21 @@ export function Footer() {
           <address className="not-italic"><h2 className="eyebrow mb-4">Find us</h2>
             <ul className={col}>
               <li className="flex gap-3"><MapPin size={16} className="mt-0.5 shrink-0 text-gold" /><a href={s.mapsUrl} target="_blank" rel="noopener noreferrer" className={lnk}>{s.address}</a></li>
-              <li className="flex gap-3"><Phone size={16} className="mt-0.5 shrink-0 text-gold" /><a href={telLink(s.phone)} className={lnk}>{s.phone}</a></li>
+              <li className="flex gap-3">
+  <Phone size={16} className="mt-0.5 shrink-0 text-gold" />
+  <span>
+    <span className="block text-xs text-cream/40">Front desk</span>
+    <a href={telLink(s.phone)} className={lnk}>{s.phone}</a>
+  </span>
+</li>
+
+<li className="flex gap-3">
+  <Phone size={16} className="mt-0.5 shrink-0 text-gold" />
+  <span>
+    <span className="block text-xs text-cream/40">Reservations</span>
+    <a href={telLink(s.phoneSecondary)} className={lnk}>{s.phoneSecondary}</a>
+  </span>
+</li>
               <li className="flex gap-3"><Mail size={16} className="mt-0.5 shrink-0 text-gold" /><a href={`mailto:${s.email}`} className={`${lnk} break-all`}>{s.email}</a></li>
               <li className="text-cream/50">Check-in {formatClock(s.checkInTime)} · Check-out {formatClock(s.checkOutTime)}<br />Front desk open 24x7</li>
             </ul>

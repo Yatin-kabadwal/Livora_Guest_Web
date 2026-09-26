@@ -11,8 +11,9 @@ export const siteConfig = {
   tagline: 'A forest sanctuary at the edge of Jim Corbett',
   description:
     'Ten private rooms at the edge of Jim Corbett National Park, Uttarakhand. Sal forest, Kosi river air, jeep safaris and unhurried mornings, hosted by Livora.',
-  phone: '+91 95288 27446',
-  whatsapp: '919528827446', // digits only, with country code
+ phone: '+91 95288 27446',
+phoneSecondary: '+91 97582 00231',
+whatsapp: '919758200231',
   email: 'Livorahospitality06@gmail.com',
   address: 'Corbett The Vedant By Livora, Jim Corbett, Uttarakhand, India',
   mapsUrl: 'https://maps.app.goo.gl/cEp1Z3fmkQMXzEau8',
@@ -28,7 +29,8 @@ export type SiteConfig = {
   name: string;
   tagline: string;
   phone: string;
-  whatsapp: string;
+phoneSecondary: string;
+whatsapp: string;
   email: string;
   address: string;
   mapsUrl: string;

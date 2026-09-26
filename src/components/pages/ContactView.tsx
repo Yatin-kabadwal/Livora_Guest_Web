@@ -21,8 +21,11 @@ export function ContactView() {
   ];
   const [open, setOpen] = useState<number | null>(0);
   const items = [
-    { Icon: Phone, l: 'Call us', v: s.phone, href: telLink(s.phone) },
-    { Icon: MessageCircle, l: 'WhatsApp', v: 'Chat with the front desk', href: waLink(s.whatsapp, 'Hello, I would like to know more about Corbett The Vedant By Livora.'), ext: true },
+    { Icon: Phone, l: 'Front desk', v: s.phone, href: telLink(s.phone) },
+
+{ Icon: Phone, l: 'Reservations', v: s.phoneSecondary, href: telLink(s.phoneSecondary) },
+
+{ Icon: MessageCircle, l: 'WhatsApp', v: 'Chat with reservations', href: waLink(s.whatsapp, 'Hello, I would like to know more about Corbett The Vedant By Livora.'), ext: true },
     { Icon: Mail, l: 'Email', v: s.email, href: `mailto:${s.email}` },
     { Icon: MapPin, l: 'Visit', v: s.address, href: s.mapsUrl, ext: true },
     { Icon: Clock, l: 'Front desk', v: 'Open 24x7' },

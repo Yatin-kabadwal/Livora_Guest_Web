@@ -29,8 +29,9 @@ export interface PublicSettings {
   resortName: string;
   tagline: string;
   phone: string;
-  whatsapp: string;
-  email: string;
+phoneSecondary: string;
+whatsapp: string;
+email: string;
   address: string;
   mapsUrl: string;
   mapsEmbedUrl: string;
